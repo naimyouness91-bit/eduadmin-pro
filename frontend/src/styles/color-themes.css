@@ -1,0 +1,55 @@
+/**
+ * Fallback theme variables before JS runs (FOUC prevention).
+ * Runtime theme is applied via applyColorTheme() inline on <html>.
+ */
+
+html[data-color-theme='blue'],
+html:not([data-color-theme]) {
+  --color-primary-50: 239 246 255;
+  --color-primary-100: 219 234 254;
+  --color-primary-200: 191 219 254;
+  --color-primary-300: 147 197 253;
+  --color-primary-400: 96 165 250;
+  --color-primary-500: 59 130 246;
+  --color-primary-600: 37 99 235;
+  --color-primary-700: 29 78 216;
+  --color-primary-800: 30 64 175;
+  --color-primary-900: 30 58 138;
+  --color-primary-950: 23 37 84;
+  --primary-color: #3b82f6;
+  --secondary-color: #2563eb;
+  --accent-color: #60a5fa;
+  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%);
+  --mesh-gradient: radial-gradient(at 40% 20%, rgba(59, 130, 246, 0.25) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, rgba(37, 99, 235, 0.2) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, rgba(96, 165, 250, 0.12) 0px, transparent 50%);
+  --shadow-glow: 0 0 24px rgba(59, 130, 246, 0.35);
+}
+
+html[data-color-theme='purple'] {
+  --color-primary-500: 139 92 246;
+  --primary-color: #8b5cf6;
+  --secondary-color: #7c3aed;
+  --accent-color: #a78bfa;
+}
+
+html[data-color-theme='green'] {
+  --color-primary-500: 34 197 94;
+  --primary-color: #22c55e;
+  --secondary-color: #16a34a;
+  --accent-color: #4ade80;
+}
+
+html[data-color-theme='orange'] {
+  --color-primary-500: 249 115 22;
+  --primary-color: #f97316;
+  --secondary-color: #ea580c;
+  --accent-color: #fb923c;
+}
+
+html[data-color-theme='red'] {
+  --color-primary-500: 239 68 68;
+  --primary-color: #ef4444;
+  --secondary-color: #dc2626;
+  --accent-color: #f87171;
+}

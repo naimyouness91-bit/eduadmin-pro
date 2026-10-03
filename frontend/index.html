@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr" data-color-theme="blue">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EduAdmin Pro — Plateforme de gestion scolaire moderne pour administrateurs, enseignants, étudiants et parents."
+    />
+    <meta name="theme-color" content="#6366f1" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>EduAdmin Pro</title>
+    <script>
+      (function () {
+        try {
+          var theme = localStorage.getItem('theme') || 'light';
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+          document.documentElement.setAttribute('data-theme-mode', theme === 'dark' ? 'dark' : 'light');
+          var lang = localStorage.getItem('eduadmin-lang') || localStorage.getItem('i18nextLng') || 'en';
+          lang = (lang || 'en').split('-')[0];
+          var colorTheme = localStorage.getItem('eduadmin-color-theme') || 'blue';
+          if (['blue', 'purple', 'green', 'orange', 'red'].indexOf(colorTheme) === -1) {
+            colorTheme = 'blue';
+          }
+          document.documentElement.setAttribute('data-color-theme', colorTheme);
+          document.documentElement.lang = lang;
+          document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-surface-50 text-surface-900 dark:bg-surface-950 dark:text-surface-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

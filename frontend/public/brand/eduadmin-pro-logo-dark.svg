@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-label="EduAdmin Pro">
+  <defs>
+    <linearGradient id="ep-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="24" width="112" height="112" rx="24" fill="url(#ep-gradient)"/>
+  <path fill="#ffffff" transform="translate(36 36) scale(5.33)" d="M12 3.7L1 9.5l4 2.2v6.1L12 21l7-3.8v-6.1l2-1.1V17h2V9.5L12 3.7zm6.8 6L12 12.7 5.2 9.7 12 6.3l6.8 3.4z"/>
+  <text x="144" y="78" font-family="Sora, 'Segoe UI', system-ui, sans-serif" font-size="48" font-weight="700" fill="#ffffff">EduAdmin</text>
+  <text x="144" y="118" font-family="Sora, 'Segoe UI', system-ui, sans-serif" font-size="28" font-weight="600" fill="#93c5fd" letter-spacing="0.12em">PRO</text>
+</svg>
